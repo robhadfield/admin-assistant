@@ -38,6 +38,7 @@
   "devDependencies": {
     "jss-plugin-global": "^10.9.0",
     "lodash": "^4.17.21",
-    "react-jss": "^10.9.0"
+    "react-jss": "^10.9.0",
+    "@accessible/use-key": "^1.0.2"
   }
 }
