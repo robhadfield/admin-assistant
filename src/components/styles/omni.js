@@ -25,9 +25,14 @@ export const omni = {
   input: {
     display: 'block',
     padding: 16,
-    fontSize: 16,
+    borderRadius: 8,
+    fontSize: 24,
     fontFamily: '"Inter", sans-serif',
-    border: 'none',
-    width: '100%'
+    border: '2px solid transparent',
+    width: '100%',
+
+    '&:focus, &:active, &:hover': {
+      border: '2px solid #24A148'
+    }
   }
 }

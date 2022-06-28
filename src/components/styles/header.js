@@ -3,7 +3,7 @@
 export const header = {
     wrap: {
       display: 'flex',
-      justifyContent: 'space-between',
+      justifyContent: 'right',
       alignItems: 'center',
       paddingLeft: 40,
       paddingRight: 24,

@@ -9,7 +9,9 @@ export const Omni = ({active}) => {
   
   return (
     <div className={active ? classes.outer : classes.inactive}>
-      <input className={classes.input} type="text" placeholder="Start typing..." />
+      {active && 
+        <input autoFocus className={classes.input} type="text" placeholder="Start typing..." />
+      }
     </div>
   );
 }
