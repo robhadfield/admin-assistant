@@ -11,7 +11,7 @@ export const header = {
       background: 'white',
       borderBottom: '1px solid #e5e5e5'
     },
-    input: {
+    headerinput: {
       borderRadius: 4,
       border: '1px solid #aaa',
       padding: 4

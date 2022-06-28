@@ -4,12 +4,12 @@ import { omni as styles } from './styles/omni';
 
 const useStyles = createUseStyles(styles);
 
-export const Omni = ({children}) => {
+export const Omni = ({active}) => {
   const classes = useStyles();
   
   return (
-    <div className={classes.outer}>
-      I AM OMNI
+    <div className={active ? classes.outer : classes.inactive}>
+      <input className={classes.input} type="text" placeholder="Start typing..." />
     </div>
   );
 }

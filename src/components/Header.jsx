@@ -23,7 +23,7 @@ export const Header = () => {
   return (
     <>
       <div className={classes.wrap}>
-        <input type="text" className={classes.input} placeholder="Start typing..." />
+        <input type="text" className={classes.headerinput} placeholder="Start typing..." />
         <div className={classes.user}>
           <div className={classes.info}>
             <div className={classes.name}>Robyn Rihanna Fenty</div>
@@ -32,9 +32,7 @@ export const Header = () => {
           <div className={classes.avatar}></div>
         </div>
       </div>
-      { helper && 
-        <Omni />
-      }
+      <Omni active={helper} />
     </>
   );
 }
