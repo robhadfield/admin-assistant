@@ -1,14 +1,28 @@
-export const defaultMenuHome = [
-  { label: 'Create new Event', type: 'action' },
-  { label: 'Add new user', type: 'action' },
-  { label: 'Duplicate last event', type: 'action' },
-  { label: 'Go to last event', type: 'nav' },
-  { label: 'View account settings', type: 'nav' },
+export const defaultMenuHomeNew = [
+  { label: 'Create Slido', type: 'action' },
+  { label: 'Create Slido and show teambuilding poll templates', type: 'action' },
+  { label: 'Create Slido and show feedback poll templates', type: 'action' },
+  { label: 'Account settings', type: 'nav' },
+  { label: 'Help center', type: 'nav' },
+  { label: 'Watch how it works', type: 'help', helpType: 'video' },
+  { label: 'Create your Slido event', type: 'help' },
 ];
 
-export const defaultMenuSearch = [
-  { label: 'Dolly Parton', type: 'user', img: './images/dolly.png' },
-  { label: 'Kenny Rogers', type: 'user', img: './images/kenny.png' },
-  { label: 'Emmylou Harris', type: 'user', img: './images/emmy.png' },
-  { label: 'Create new Event', type: 'action' },
+export const defaultMenuHomeActive = [
+  { label: 'Duplicate event', type: 'action' },
+  { label: 'Create event from template', type: 'action' },
+  { label: 'Start presenting', type: 'action' },
+  { label: 'Account settings', type: 'nav' },
+  { label: 'Help center', type: 'nav' },
+  { label: 'How to duplicate and reuse events', type: 'help', helpType: 'video' },
+  { label: 'Slido integrations', type: 'help' },
+];
+
+export const defaultMenuEvent = [
+  { label: 'Add a collaborator', type: 'action' },
+  { label: 'Download event summary', type: 'action' },
+  { label: 'Add a new poll from library', type: 'action' },
+  { label: 'Add/remove features to your event', type: 'nav' },
+  { label: 'Test your Slido event', type: 'help', helpType: 'video' },
+  { label: 'Invite participants to your event', type: 'help' },
 ];

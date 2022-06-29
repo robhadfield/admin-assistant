@@ -4,18 +4,20 @@ export const omni = {
   inactive: {
     position: 'fixed',
     transform: 'translate(-50%, 40px)',
-    opacity: 0
+    opacity: 0,
+    left: '50%',
+    top: 140,
+    pointerEvents: 'none',
   },
   outer: {
     position: 'fixed',
-    left: '50%',
-    top: 140,
     transform: 'translate(-50%, 0)',
     opacity: 1,
+    left: '50%',
+    top: 140,
     width: 600,
     display: 'flex',
     flexDirection: 'column',
-    padding: 56,
     background: 'white',
     padding: 24,
     fontFamily: '"Inter", sans-serif',
@@ -77,27 +79,64 @@ export const omni = {
     
   },
   listItemNav: {
-    background: '#FEE6F2',
+    background: '#F0EBFF',
     '&:hover': {
-      background: '#FAD2E6',
+      background: '#EAE3FF',
     },
     '& svg': {
-      color: '#FB237D'
+      color: '#8438F5'
     }
   },
   listItemAction: {
     background: '#DCFEFE',
     '&:hover': {
-      background: '#C5F5F5'
+      background: '#D1FEFE'
     },
     '& svg': {
       color: '#009999'
     }
   },
+  listItemHelp: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+
+
+  /**
+   * Helpers
+   */
   listItemAvatar: {
     height: 32,
     width: 32,
     borderRadius: 16,
     background: 'red',
+  },
+  labelWrap: {
+    display: 'flex',
+    alignItems: 'center',
+
+    '& svg': {
+      color: '#24A148'
+    }
+  },
+  listItemVideo: {
+    padding: '6px 16px',
+    borderRadius: 4,
+    background: '#24A148',
+    '& svg': {
+      color: 'white'
+    }
+  },
+  listItemVideoFrame: {
+    position: 'fixed',
+    width: '100vw',
+    height: '100vh',
+    zIndex: 1,
+    top: -140,
+    left: '-148%',
+    background: 'rgba(255,255,255,.85)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 }

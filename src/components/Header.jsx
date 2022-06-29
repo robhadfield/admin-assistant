@@ -4,6 +4,7 @@ import { header as styles } from './styles/header';
 import useKey from '@accessible/use-key'
 
 import { Omni } from './Omni';
+import cash from '../images/cash.png';
 
 const useStyles = createUseStyles(styles);
 
@@ -25,10 +26,10 @@ export const Header = () => {
       <div className={classes.wrap}>
         <div className={classes.user}>
           <div className={classes.info}>
-            <div className={classes.name}>Robyn Rihanna Fenty</div>
+            <div className={classes.name}>Johnny Cash</div>
             <div className={classes.account}>Account Admin</div>
           </div>
-          <div className={classes.avatar}></div>
+          <div className={classes.avatar} style={{backgroundImage:`url(${cash})`}}></div>
         </div>
       </div>
       <Omni active={helper} />

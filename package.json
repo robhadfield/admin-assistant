@@ -36,9 +36,10 @@
     ]
   },
   "devDependencies": {
+    "@accessible/use-key": "^1.0.2",
     "jss-plugin-global": "^10.9.0",
     "lodash": "^4.17.21",
     "react-jss": "^10.9.0",
-    "@accessible/use-key": "^1.0.2"
+    "react-router-dom": "^6.3.0"
   }
 }

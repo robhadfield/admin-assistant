@@ -7,7 +7,6 @@ export const menu = {
       width: 160,
       height: '100vh',
       background: 'white',
-      zIndex: 5,
       borderRight: '1px solid #e5e5e5'
     },
     expand: {
@@ -29,7 +28,11 @@ export const menu = {
       marginBottom: 40
     },
     menuList: {
-      padding: 16
+      padding: 16,
+
+      '& a': {
+        textDecoration: 'none'
+      }
     },
     menuItem: {
       padding: 16,
@@ -39,19 +42,14 @@ export const menu = {
       borderRadius: 8,
       marginBottom: 4,
 
+      '&.active': {
+        background: '#E5FAEC',
+      },
+
       '&:hover': {
         background: '#E5FAEC',
         cursor: 'pointer'
       }
-    },
-    menuItemActive: {
-      padding: 16,
-      display: 'flex',
-      flexDirection: 'column',
-      textAlign: 'center',
-      background: '#E5FAEC',
-      borderRadius: 8,
-      marginBottom: 4,
     },
     menuIcon: {
       fontSize: 16,
