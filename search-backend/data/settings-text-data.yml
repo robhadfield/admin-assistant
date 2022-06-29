@@ -1,0 +1,256 @@
+Event settings:
+    i:
+        - General
+        - Privacy
+        - Features
+        - Customization
+        - Integrations
+        - Slido Labs
+        - My plan
+
+General:
+    i:
+        - Basic information
+        - Share access
+        - Multiple rooms
+
+Privacy settings:
+    i:
+        - Hidden from search
+        - Participant privacy
+        - Require authentication
+
+Features: #TODO go through all features!
+    i:
+        - Audience Q&A
+        - Live polls
+        - Ideas
+        - Agenda
+        - Virtual Hallway
+
+Customization:
+    i:
+        - Branding
+        - Present mode
+        - Participant mode
+
+
+Integrations:
+    i:
+        - Google Slides
+        - PowerPoint
+        - Microsoft Teams
+        - Live Video
+        - Switcher
+        - Embed Slido
+
+Slido Labs:
+    s: Slido Labs Beta
+    d: Slido Labs allows you to try and test our experimental features. They may change or even disappear at any time.
+    i:
+        - Have your own ideas?
+        - Recent questions by default
+        - Join event via QR code
+        - Question withdrawal
+        - Separate score for Q&A downvotes
+        - Similar questions suggestions
+        - Question topics
+
+My plan:
+    s:
+        - My current plan
+        - Upgrade
+    d: You can compare features within other plans or contact us for any help.
+    i:
+        - Show pricing
+
+Recent questions by default:
+    d: All questions on participant devices will be sorted chronologically with the most recent on top.
+    s: recent-tab-as-default
+
+Join event via QR code:
+    d: Allow participants to join the event by scanning a QR code from the Present mode with their phones
+    s: qr-codes
+
+Question withdrawal:
+    d: Allow participants to withdraw their questions anytime during the Q&A.
+    s: question-withdraw
+
+Separate score for Q&A downvotes:
+    d: Show question downvotes separately in the participant view instead of a cumulative score
+    s: separate-score-for-q-a-downvotes
+
+Similar questions suggestions:
+    d: Avoid duplicate questions by suggesting them to the participants when submitting a new question. Useful for bigger English events.
+    s: similar-questions
+
+Question topics:
+    d: Let your participants filter questions by their topics, which we will automatically generate for English questions.
+    s: questions-topics
+
+Have your own ideas?:
+    d: Share your unique ideas with us to make Slido even more powerful.
+
+
+Participant privacy:
+    d: 
+        - Participant names are used by default when interacting with Polls and Q&A but can choose to be anonymous.
+        - Participants interact anonymously with Polls and Q&A by default but can choose to show their name.
+        - Q&A and Polls are all submitted anonymously by all participants. Participants cannot show their name.
+        - Participant name will be captured when entering event and used for all Q&A and Poll interactions. Participants cannot choose to be anonymous. Please note this setting is not compatible with Webex Guest accounts.
+
+Require authentication:
+    d:
+        - Protect your event via basic authentication options or single sign-on.
+        - Changing authentication settings will log out all joined participants. They will need to log in again.
+    i:
+        - Basic authentication
+        - Google SSO
+        - SAML SSO
+
+Basic authentication:
+    d: Require participants to enter additional passcode, their name or email address to join this event.
+    i:
+        - Require name
+        - Require passcode
+        - Require email address
+
+Require name:
+    d: Participants need to enter their names to join your event.
+
+Require passcode:
+    d: Passcode will be displayed on the Present view.
+
+SAML SSO:
+    d: SAML is standard for exchanging authentication and authorization data between security domains. #| Upload XML
+    i:
+        - Restrict who can access the event
+
+Restrict who can access the event:
+    d:
+        - Participants with a specified email address or domain will be able to join this event.
+        - They will receive an email with both a code and a direct link to access the event.
+
+Google SSO:
+    d: Single sign-on is an authentication process that allows a user to access multiple applications with one set of login credentials.
+
+
+Require email address:
+    d: Participants will be asked to enter their email address before joining.
+    i:
+        - Restrict who can access the event
+
+Hidden from search:
+    s: unlisted
+    d: Hide the event from search results. Entering full event code is required to join the event.
+
+Basic information:
+    d: Change your event name, event code, language and other basic settings for your event.
+    i:
+        - Event name
+        - Start date
+        - End date
+        - Event code
+        - Event link
+        - Location
+        - Language
+        - Timezone
+
+Share access:
+    d: Invite others to help you with managing this event.
+    s: Collaborators
+
+Multiple rooms:
+ d:
+    - Manage Audience Q&A and Live polls separately in multiple rooms at the same time.
+    - After creating multiple rooms your participants can access them within your single event code.
+ i:
+    - Room name
+    - Manage which room stays activated
+    - add a new room
+
+
+Audience Q&A:
+    d: Let your participants ask questions from their devices.
+    s: Questions
+
+Live polls:
+    d: Let your participants share their opinions and let them vote instantly from their devices.
+
+Ideas:
+    d: Collect and curate ideas at brainstorming sessions with your colleagues or clients.
+
+Agenda:
+    d: Let your participants view the schedule and speakers of your event.
+
+Virtual Hallway:
+    d: Enable participants to form groups and network with each other using audio call.
+
+Branding:
+    d: Upload your event logo and partner logos for your event.
+
+Present mode:
+    d: Choose your theme and customize it to your needs.
+    s: Present view
+
+Participant mode:
+    d: Customize view for your attendees.
+    s: Participant view
+
+Google Slides:
+    d: Add Slido directly into your Google Slides presentation.
+
+PowerPoint:
+    d: Add Slido directly into your PowerPoint presentation.
+
+Microsoft Teams:
+    d: Add Slido directly into your Teams meetings.
+    s: MS Teams
+
+Live Video:
+    d: Let your remote participants watch a live video feed from your event.
+
+Switcher:
+    d: Seamlessly switch between Slido and your presentation.
+
+Embed Slido:
+    d: Embed Slido participant view into your own website.
+
+
+
+
+## FEATURES NOT AVAILABLE IN LABS
+# Edit questions:
+#     d: Allow participants to edit their questions during the Q&A.
+#     s: edit-withdraw-q
+# Edit request:
+#     d: Allow participants to request an edit for a live question during the moderated event. 
+#     s: question-edit-request
+# App custom colors:
+#     d: Enable color customization of participant view.
+#     s: app-custom-colors
+# Track seen questions:
+#     d: Track seen questions
+#     s: track-seen-question
+# External links:
+#     d: Include links to external resources in the participant mode side menu
+#     s: external-links
+# Virtual Hallway:
+#     d: Enable Virtual Hallway networking feature
+#     s: hallway
+# Similar questions suggestions in modal:
+#     d: Modal version that, avoid duplicate questions by suggesting them to the participants when submitting a new question. Useful for bigger English events.
+#     s: similar-questions-modal
+# Ranking poll:
+#     d: Let your audience prioritize individual items to help you determine their importance. Once enabled, refresh the page for the Ranking poll to appear in the Live polls tab.
+#     s: ranking-poll
+# Event Recap:
+#     d: Enable event Recap feature
+#     s: event-recap
+# Tweaks to participant design:
+#     d: Try a new, refreshed design of the participant view, includes slick animations and more.
+#     s: facelift-and-animations
+# Random incorrect quiz options:
+#     d: A magic wand feature, that lets you generate random incorrect options when creating a quiz in Admin
+#     s: random-quiz-options
+
