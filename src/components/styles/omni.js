@@ -9,7 +9,7 @@ export const omni = {
   outer: {
     position: 'fixed',
     left: '50%',
-    top: 200,
+    top: 140,
     transform: 'translate(-50%, 0)',
     opacity: 1,
     width: 600,
@@ -29,7 +29,7 @@ export const omni = {
     borderRadius: 8,
     fontSize: 24,
     fontFamily: '"Inter", sans-serif',
-    border: '2px solid transparent',
+    border: '2px solid #eaeaea',
 
     '&:focus, &:active, &:hover': {
       border: '2px solid #198038',
@@ -38,13 +38,16 @@ export const omni = {
   },
 
 
-  omniList: {
+  list: {
     marginTop: 8
   },
-  omniListItem: {
+
+  listItem: {
     display: 'flex',
+    alignItems: 'center',
     padding: 16,
-    fontSize: 14,
+    fontSize: 16,
+    color: '#161616',
     background: '#f5f5f5',
     borderRadius: 4,
     marginBottom: 2,
@@ -54,8 +57,47 @@ export const omni = {
       cursor: 'pointer'
     }
   },
-  omniListItemIcon: {
+  listItemIcon: {
     opacity: '0.8',
-    marginRight: 12
+    marginRight: 12,
+    fontSize: 32
+  },
+  listDivider: {
+    marginTop: 8,
+    marginBottom: 8,
+    border: 'none',
+    borderTop: '1px solid #eaeaea'
+  },
+  /**
+   * 
+   * Variants
+   * 
+   */
+  listItemUser: {
+    
+  },
+  listItemNav: {
+    background: '#FEE6F2',
+    '&:hover': {
+      background: '#FAD2E6',
+    },
+    '& svg': {
+      color: '#FB237D'
+    }
+  },
+  listItemAction: {
+    background: '#DCFEFE',
+    '&:hover': {
+      background: '#C5F5F5'
+    },
+    '& svg': {
+      color: '#009999'
+    }
+  },
+  listItemAvatar: {
+    height: 32,
+    width: 32,
+    borderRadius: 16,
+    background: 'red',
   }
 }

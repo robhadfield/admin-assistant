@@ -1,34 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { omni as styles } from './styles/omni';
+
+import { OmniMenu } from './OmniMenu';
 
 const useStyles = createUseStyles(styles);
 
 export const Omni = ({active}) => {
   const classes = useStyles();
+  const [ text, setText ] = useState('');
   
   return (
     <div className={active ? classes.outer : classes.inactive}>
       {active && 
-        <input autoFocus className={classes.input} type="text" placeholder="Start typing..." />
+        <input
+          onChange={e => setText(e.target.value)}
+          value={text}
+          autoFocus
+          className={classes.input}
+          type="text"
+          placeholder="Start typing..."
+        />
       }
-      <div className={classes.omniList}>
-        <div className={classes.omniListItem}>
-          <div className={classes.omniListItemIcon}>
-            <i className="far fa-circle-s" />
-          </div> Create a new Slido
-        </div>
-        <div className={classes.omniListItem}>
-          <div className={classes.omniListItemIcon}>
-            <i className="far fa-user" />
-          </div> Add a new team member
-        </div>
-        <div className={classes.omniListItem}>
-          <div className={classes.omniListItemIcon}>
-            <i className="far fa-file-invoice" />
-          </div> View invoices
-        </div>
-      </div>
+      <OmniMenu search={text} />
     </div>
   );
 }
