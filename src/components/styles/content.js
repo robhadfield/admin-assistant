@@ -3,10 +3,13 @@
 export const content = {
     outer: {
       display: 'flex',
-      flexDirection: 'column',
+      justifyContent: 'center',
       padding: '40px 64px',
       fontFamily: '"Inter", sans-serif',
       letterSpacing: '-0.04em'
+    },
+    inner: {
+      maxWidth: 1200,
     },
     welcome: {
       display: 'flex',
@@ -57,6 +60,10 @@ export const content = {
       fontSize: 24,
       fontWeight: 500,
       maxWidth: 320,
+    },
+    createNewSlidoWrap: {
+      paddingTop: 16,
+      paddingBottom: 32,
     },
     createNewSlido: {
       padding: '16px 16px',

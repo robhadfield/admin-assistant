@@ -3,10 +3,13 @@
 export const event = {
     outer: {
       display: 'flex',
-      flexDirection: 'column',
+      justifyContent: 'center',
       padding: '40px 64px',
       fontFamily: '"Inter", sans-serif',
       letterSpacing: '-0.04em'
+    },
+    inner: {
+      maxWidth: 1200,
     },
     welcome: {
       display: 'flex',
@@ -33,7 +36,9 @@ export const event = {
       padding: '8px 16px',
       background: '#198038',
       color: 'white',
-      borderRadius: 4
+      borderRadius: 4,
+      marginRight: 20,
+      cursor: 'pointer'
     },
     /**
      * 
@@ -53,8 +58,18 @@ export const event = {
     },
     modal: {
       background: 'white',
-      padding: 24,
+      padding: '24px 56px',
       borderRadius: 8,
       boxShadow: '0 24px 48px rgba(0,0,0,0.2), 0 0 1px 0 rgba(0,0,0,0.1)',
+
+      '& > div': {
+        marginBottom: 20,
+      }
+    },
+    modalInput: {
+      display: 'block',
+      width: 200,
+      lineHeight: '16px',
+      padding: 8,
     }
 }

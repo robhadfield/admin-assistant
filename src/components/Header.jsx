@@ -15,6 +15,7 @@ export const Header = () => {
 
   useKey(window, {
     '/': (event) => setKeys(keys.concat(event.key)),
+    Escape: (event) => setKeys(keys.concat(event.key)),
   });
 
   useEffect(()=> {

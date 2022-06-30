@@ -36,3 +36,7 @@ export const menuSearch = [
   { label: 'How to <b>add</b> video to your Slido', type: 'help', helpType: 'video' },
   { label: 'See how <b>add</b>ing polls can improve engagement', type: 'help' },
 ]
+
+export const menuAllHands = [
+  { label: 'Create new Slido using <b>all-hands</b> template', type: 'action' }
+]
