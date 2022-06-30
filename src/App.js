@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from "react-dom/client";
 import { Wrap } from './components/Wrap';
 import { Menu } from './components/Menu';
 import { Header } from './components/Header';

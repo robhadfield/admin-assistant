@@ -76,7 +76,10 @@ export const omni = {
    * 
    */
   listItemUser: {
-    
+    background: '#FEF0E6',
+    '&:hover': {
+      background: '#FFEBDD',
+    },
   },
   listItemNav: {
     background: '#F0EBFF',
@@ -106,10 +109,13 @@ export const omni = {
    * Helpers
    */
   listItemAvatar: {
-    height: 32,
-    width: 32,
-    borderRadius: 16,
-    background: 'red',
+    
+    '& img': {
+      display: 'block',
+      height: 32,
+      width: 32,
+      borderRadius: 16,
+    },
   },
   labelWrap: {
     display: 'flex',

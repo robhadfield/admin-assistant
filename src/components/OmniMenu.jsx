@@ -5,7 +5,7 @@ import { omni as styles } from './styles/omni';
 import { useLocation } from "react-router-dom";
 
 import { OmniMenuUser, OmniMenuNav, OmniMenuAction, OmniMenuHelp } from './OmniMenuItems';
-import { defaultMenuHomeNew, defaultMenuHomeActive, defaultMenuEvent } from './menuData';
+import { defaultMenuHomeNew, defaultMenuHomeActive, defaultMenuEvent, menuSearch } from './menuData';
 
 const useStyles = createUseStyles(styles);
 
@@ -13,15 +13,15 @@ export const OmniMenu = ({search, userActive}) => {
   const classes = useStyles();
 
   const location = useLocation();
-  console.log(location);
-
   let menuData = defaultMenuHomeNew;
-
   if ( location.pathname.includes('event') ) {
     menuData = defaultMenuEvent;
   }
   if ( !location.pathname.includes('event') && userActive === true ) {
     menuData = defaultMenuHomeActive;
+  }
+  if ( search && search === 'add' ) {
+    menuData = menuSearch;
   }
   
   return (

@@ -1,6 +1,6 @@
 export const defaultMenuHomeNew = [
   { label: 'Create Slido', type: 'action' },
-  { label: 'Create Slido and show teambuilding poll templates', type: 'action' },
+  { label: 'Create Slido and show team-building poll templates', type: 'action' },
   { label: 'Create Slido and show feedback poll templates', type: 'action' },
   { label: 'Account settings', type: 'nav' },
   { label: 'Help center', type: 'nav' },
@@ -26,3 +26,13 @@ export const defaultMenuEvent = [
   { label: 'Test your Slido event', type: 'help', helpType: 'video' },
   { label: 'Invite participants to your event', type: 'help' },
 ];
+
+
+export const menuSearch = [
+  { label: '<b>Add</b> team member', type: 'action' },
+  { label: '<b>Add</b> new Slido', type: 'action' },
+  { label: 'Michelle <b>Add</b>ley', type: 'user', img: 'dolly' },
+  { label: '<b>Add</b>ison Bentley', type: 'user', img: 'kenny' },
+  { label: 'How to <b>add</b> video to your Slido', type: 'help', helpType: 'video' },
+  { label: 'See how <b>add</b>ing polls can improve engagement', type: 'help' },
+]
