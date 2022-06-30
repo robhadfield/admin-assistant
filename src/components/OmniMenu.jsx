@@ -3,6 +3,7 @@ import _ from 'lodash';
 import { createUseStyles } from 'react-jss';
 import { omni as styles } from './styles/omni';
 import { useLocation } from "react-router-dom";
+import MiniSearch from 'minisearch'
 
 import { OmniMenuUser, OmniMenuNav, OmniMenuAction, OmniMenuHelp } from './OmniMenuItems';
 import { defaultMenuHomeNew, defaultMenuHomeActive, defaultMenuEvent, menuSearch } from './menuData';
@@ -22,6 +23,20 @@ export const OmniMenu = ({search, userActive}) => {
   }
   if ( search && search === 'add' ) {
     menuData = menuSearch;
+  }
+
+  // Apply search filter
+  if (search && search !== '/' && menuData) {
+
+    menuData = defaultMenuHomeNew.concat(defaultMenuHomeActive, defaultMenuEvent, menuSearch);
+
+    menuData = menuData.map((rec, idx) => ({ ...rec, id: idx }));
+    let miniSearch = new MiniSearch({
+      fields: ['label'],
+      storeFields: ['label', 'type']
+    });
+    miniSearch.addAll(menuData);
+    menuData = miniSearch.search(search, { prefix: true, fuzzy: 0.2 });
   }
   
   return (
